@@ -436,6 +436,7 @@ func main() {
 
 	if inputFile, err := os.Open(filePath); err != nil {
 		fmt.Println("Caminho do arquivo de entrada é inválido, não foi possível abrir o arquivo.")
+		fmt.Println("É necessário ter o arquivo _teste.c_ no mesmo diretório de execução.")
 		fmt.Println(err.Error())
 	} else if outputFile, err := os.Create(outputPath); err != nil {
 		fmt.Println("Caminho do arquivo de saída é inválido, não foi possível criar o arquivo.")
